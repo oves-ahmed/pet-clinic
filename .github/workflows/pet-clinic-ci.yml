@@ -21,7 +21,7 @@ jobs:
           java-version: 17
           distribution: 'zulu' # Alternative distribution options are available.
       - name: Setup Maven
-        uses: s4u/setup-maven-action@ad7db9cbdf58c56fa2d2a58e2d4f2b96b0fca339
+        uses: s4u/setup-maven-action@v1.19.0
         with:
           checkout-action: false
           maven-version: '3.9.6'
