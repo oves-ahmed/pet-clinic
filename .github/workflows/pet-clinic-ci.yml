@@ -20,6 +20,11 @@ jobs:
         with:
           java-version: 17
           distribution: 'zulu' # Alternative distribution options are available.
+      - name: Setup Maven
+        uses: s4u/setup-maven-action@ad7db9cbdf58c56fa2d2a58e2d4f2b96b0fca339
+        with:
+          checkout-action: false
+          maven-version: '3.9.6'
       - name: Cache SonarQube packages
         uses: actions/cache@0057852bfaa89a56745cba8c7296529d2fc39830 # v4.3.0
         with:
