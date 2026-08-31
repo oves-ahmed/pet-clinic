@@ -3,13 +3,10 @@ kind: Ingress
 metadata:
   name: petclinic-ingress
   namespace: petclinic
-  annotations:
-    nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
   ingressClassName: nginx
   rules:
-    - host: petclinic.local
-      http:
+    - http:
         paths:
           - path: /
             pathType: Prefix
